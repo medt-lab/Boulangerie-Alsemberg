@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jad'OR, boulangerie et pâtisserie artisanale pour le quotidien et vos événements sur mesure : mariage, anniversaire et célébration.">
+  <meta name="theme-color" content="#18231f">
+  <title>Jad'OR — Boulangerie artisanale & pâtisserie d’événements</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <div class="announcement">
+    <div class="announcement-inner">
+      Commande événementielle : réservez votre dégustation jusqu’à 3 mois avant votre date.</div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="nav-shell" aria-label="Navigation principale">
+      <a class="brand" href="#accueil" aria-label="Jad'OR — Accueil">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64">
+            <defs>
+              <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#e1c793"/>
+                <stop offset="50%" style="stop-color:#c49a5a"/>
+                <stop offset="100%" style="stop-color:#b48847"/>
+              </linearGradient>
+            </defs>
+            <path d="M40 6C22 6 8 20 8 38s14 20 32 20c10 0 18-4 22-10-8 4-16 6-24 6C18 54 4 40 4 22S18 6 36 6c4 0 7 1 10 3-2-1-4-3-6-3z" fill="url(#goldGrad)"/>
+          </svg>
+        </span>
+        <span>Jad'<span>OR</span></span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navMenu" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-menu" id="navMenu">
+        <ul>
+          <li><a class="nav-link active" href="#accueil">Accueil</a></li>
+          <li><a class="nav-link" href="#signatures">Nos créations</a></li>
+          <li><a class="nav-link" href="#frais">Sandwicherie & frais</a></li>
+          <li><a class="nav-link" href="#marocaine">Spécialité marocaine</a></li>
+          <li><a class="nav-link" href="#evenements">Événements</a></li>
+          <li><a class="nav-link" href="#savoir-faire">Savoir-faire</a></li>
+          <li><a class="nav-link" href="#galerie">Galerie</a></li>
+        </ul>
+        <a class="button button-small nav-cta" href="#contact">Demander un devis</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenu">
+    <section class="hero" id="accueil">
+      <div class="hero-media" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"><img src="images/j17.jpg" alt="" loading="eager"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-inner container">
+        <div class="hero-copy reveal">
+          <p class="eyebrow eyebrow-light"><span></span> Boulangerie & pâtisserie artisanale</p>
+          <h1>Des moments doux,<br><em>faits maison.</em></h1>
+          <p class="hero-text">Du pain quotidien aux pièces montées les plus délicates, Jad'OR transforme vos envies en créations généreuses, raffinées et mémorables.</p>
+          <div class="hero-actions">
+            <a class="button button-gold" href="#evenements">Imaginer mon événement</a>
+            <a class="button button-ghost" href="#signatures">Découvrir la carte <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="hero-proof">
+            <div class="hero-rating" aria-label="Note de 4,6 sur 5">
+              <span class="stars" aria-hidden="true">★★★★★</span>
+              <strong>4,6/5</strong>
+            </div>
+            <p>Plus de 160 avis Google — la meilleure boulangerie de Forest</p>
+          </div>
+        </div>
+
+        <aside class="opening-card reveal" aria-label="Horaires du jour">
+          <div class="opening-card-top">
+            <span class="live-dot"></span>
+            <span>Ouvert aujourd’hui</span>
+            <strong>06h–20h</strong>
+          </div>
+          <div class="opening-card-divider"></div>
+          <p>Retrait en boutique ou sur commande</p>
+          <a href="#contact">Parler de mon projet <span aria-hidden="true">↗</span></a>
+        </aside>
+      </div>
+
+      <a class="scroll-cue" href="#signatures" aria-label="Découvrir les créations">
+        <span></span>
+      </a>
+    </section>
+
+    <section class="feature-strip" aria-label="Nos engagements">
+      <div class="container features-grid">
+        <article>
+          <span class="feature-icon" aria-hidden="true">01</span>
+          <div><h3>Fait chaque jour</h3><p>Pétri, façonné et cuit sur place avec patience.</p></div>
+        </article>
+        <article>
+          <span class="feature-icon" aria-hidden="true">02</span>
+          <div><h3>Produits choisis</h3><p>Farines de meuniers, beurre AOP et fruits de saison.</p></div>
+        </article>
+        <article>
+          <span class="feature-icon" aria-hidden="true">03</span>
+          <div><h3>Sur mesure</h3><p>Une création pensée pour votre goût et votre événement.</p></div>
+        </article>
+        <article>
+          <span class="feature-icon" aria-hidden="true">04</span>
+          <div><h3>Conseil personnalisé</h3><p>Un échange simple pour un résultat sans surprise.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section signatures" id="signatures">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow"><span></span> La carte du jour</p>
+            <h2>Les signatures <em>Jad'OR</em></h2>
+          </div>
+          <p>Des recettes équilibrées, des textures généreuses et une finition soignée — pensées pour toutes les tables.</p>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card reveal">
+            <div class="product-image">
+              <img src="images/j8.jpg" alt="Baguette tradition campagnarde" loading="lazy">
+              <span class="product-badge">Incontournable</span>
+            </div>
+            <div class="product-content">
+              <div><h3>Baguette Tradition</h3><p>Croûte dorée, mie alvéolée, pépite de saveur</p></div>
+              <strong>1,20 €</strong>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-image">
+              <img src="images/j6.jpg" alt="Croissants à l'amande" loading="lazy">
+              <span class="product-badge">Fait maison</span>
+            </div>
+            <div class="product-content">
+              <div><h3>Croissant à l'amande</h3><p>Pâte feuilletée, beurre AOP, fondant à cœur</p></div>
+              <strong>2,80 €</strong>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-image">
+              <img src="images/j1.jpg" alt="Pains campagnards artisanaux" loading="lazy">
+              <span class="product-badge">Du jour</span>
+            </div>
+            <div class="product-content">
+              <div><h3>Pain Campagnard</h3><p>Croûte épaisse, mie dense, longue fermentation</p></div>
+              <strong>3,90 €</strong>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-image">
+              <img src="images/j4.jpg" alt="Tarte Tatin aux fruits" loading="lazy">
+              <span class="product-badge">De saison</span>
+            </div>
+            <div class="product-content">
+              <div><h3>Tarte Tatin</h3><p>Pommes caramélisées, pâte feuilletée maison</p></div>
+              <strong>6,50 €</strong>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80" alt="Pains artisanaux" loading="lazy">
+              <span class="product-badge">Artisanal</span>
+            </div>
+            <div class="product-content">
+              <div><h3>Pain aux céréales</h3><p>Mix de graines, croûte croustillante, mie moelleuse</p></div>
+              <strong>4,20 €</strong>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=900&q=80" alt="Croissants dorés" loading="lazy">
+              <span class="product-badge">Best-seller</span>
+            </div>
+            <div class="product-content">
+              <div><h3>Croissant au beurre</h3><p>Feuilletage artisanal, beurre AOP, dorure parfaite</p></div>
+              <strong>2,80 €</strong>
+            </div>
+          </article>
+        </div>
+
+        <div class="section-note">
+          <span>Une envie particulière ?</span>
+          <p>Nos équipes composent aussi vos gâteaux, desserts et douceurs sur réservation.</p>
+          <a href="#contact">Créons-la ensemble <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="frais">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow"><span></span> Frais du quotidien</p><h2>Sandwicherie, produits frais & boissons</h2></div>
+          <p>Au-delà du pain, nous proposons une sélection de produits frais : fromages, boissons, ainsi que des sandwichs composés sur demande.</p>
+        </div>
+        <div class="product-grid">
+          <article class="product-card reveal"><div class="product-image">              <img src="images/THON-CRUDITES-1.jpg" alt="Sandwich baguette thon et crudités" loading="lazy"><span class="product-badge">À emporter</span></div><div class="product-content"><div><h3>Sandwich frais</h3><p>Au choix : poulet, andalouse, thon nature, thon piquant, crudités — sur pain frais du jour</p></div><strong>7,50 €</strong></div></article>
+          <article class="product-card reveal"><div class="product-image"><img src="images/j18.jpg" alt="Viennoiseries fraîches" loading="lazy"><span class="product-badge">Fait maison</span></div><div class="product-content"><div><h3>Viennoiseries</h3><p>Croissants, pain au chocolat, pains aux raisins — fraîches chaque matin</p></div><strong>À partir de 1,80 €</strong></div></article>
+           <article class="product-card reveal"><div class="product-image"><img src="images/j9.jpg" alt="Produits frais" loading="lazy"><span class="product-badge">Sur mesure</span></div><div class="product-content"><div><h3>Sélection fraîche</h3><p>Fromages, boissons, produits choisis chaque matin</p></div><strong>Sur sélection</strong></div></article>
+          <article class="product-card reveal"><div class="product-image"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=80" alt="Café fraîchement servi" loading="lazy"><span class="product-badge">À emporter</span></div><div class="product-content"><div><h3>Boissons</h3><p>Jus frais, café, thé, boisson de saison — servis sur place</p></div><strong>3,50 €</strong></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="marocaine">
+      <div class="container">
+        <div class="section-heading reveal"><div><p class="eyebrow"><span></span> Spécialité</p><h2>Spécialiste marocaine <em>— gâteaux de toutes sortes</em></h2></div><p>Nous mettons un point d'honneur à réaliser des pâtisseries inspirées des traditions marocaines : cornes de gazelle, briouats, makrouds, pâtisseries aux amandes et aux fruits secs, ainsi que des créations personnalisées pour toutes vos envies.</p></div>
+        <div class="product-grid">
+          <article class="product-card reveal"><div class="product-image">              <img src="images/j7.jpg" alt="Gâteaux marocains" loading="lazy"><span class="product-badge">Tradition</span></div><div class="product-content"><div><h3>Gâteaux de toutes sortes</h3><p>Macarons, cornes de gazelle, briouats, makrouds, pâtisseries aux amandes</p></div><strong>À partir de 4 €</strong></div></article>
+          <article class="product-card reveal"><div class="product-image">              <img src="images/j11.jpg" alt="Spécialiste marocaine" loading="lazy"><span class="product-badge">Personnalisé</span></div><div class="product-content"><div><h3>Création sur mesure</h3><p>Chaque gâteau peut être adapté à vos goûts, couleurs et événements</p></div><strong>Sur devis</strong></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section occasions" id="evenements">
+      <div class="container">
+        <div class="section-heading section-heading-centered reveal">
+          <div>
+            <p class="eyebrow eyebrow-light"><span></span> Événements sur mesure</p>
+            <h2>Une table qui vous ressemble</h2>
+          </div>
+          <p>Chaque projet commence par une histoire : la vôtre. Nous imaginons avec vous une création aussi généreuse à regarder qu’à déguster.</p>
+        </div>
+
+        <div class="occasion-grid">
+          <article class="occasion-card occasion-card-large reveal">
+            <div class="occasion-media">
+              <img src="images/j13.jpg" alt="Gâteau de mariage décoré avec élégance" loading="lazy">
+              <span class="occasion-tag">Collection Mariage</span>
+            </div>
+            <div class="occasion-body">
+              <p class="occasion-number">01</p>
+              <h3>Mariage</h3>
+              <p>Une pièce unique, contemporaine ou intemporelle, conçue pour sublimer votre réception du premier regard à la dernière part.</p>
+              <ul>
+                <li>Échange et conseil personnalisé</li>
+                <li>Dégustation de deux associations</li>
+                <li>Design, dimensions et parts ajustés</li>
+              </ul>
+              <div class="occasion-footer">
+                <div><small>À partir de</small><strong>9,50 € <span>/part</span></strong></div>
+                <a href="#contact" data-occasion="Mariage">Parler de mon mariage <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="occasion-card reveal">
+            <div class="occasion-media">
+              <img src="images/j16.jpg" alt="Gâteau d’anniversaire coloré et gourmand" loading="lazy">
+              <span class="occasion-tag">Moment privé</span>
+            </div>
+            <div class="occasion-body">
+              <p class="occasion-number">02</p>
+              <h3>Anniversaire</h3>
+              <p>Un gâteau généreux, graphique ou tout en douceur, imaginé autour des goûts de celle ou celui que vous célébrez.</p>
+              <ul>
+                <li>Thème, parfum et dimensions au choix</li>
+                <li>Création familiale ou gourmande</li>
+                <li>Message personnalisé sur demande</li>
+              </ul>
+              <div class="occasion-footer">
+                <div><small>À partir de</small><strong>65 €</strong></div>
+                <a href="#contact" data-occasion="Anniversaire">Imaginer le gâteau <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="occasion-card reveal">
+            <div class="occasion-media">
+              <img src="images/j9.jpg" alt="Table de desserts pour une célébration" loading="lazy">
+              <span class="occasion-tag">Réceptions</span>
+            </div>
+            <div class="occasion-body">
+              <p class="occasion-number">03</p>
+              <h3>Célébration</h3>
+              <p>Une composition de douceurs pour un baptême, une remise de diplôme, un lancement ou tout simplement une belle réunion.</p>
+              <ul>
+                <li>Table de desserts harmonisée</li>
+                <li>Pièces individuelles faciles à servir</li>
+                <li>Quantités adaptées à vos invités</li>
+              </ul>
+              <div class="occasion-footer">
+                <div><small>Sur devis</small><strong>12 € <span>/pers.</span></strong></div>
+                <a href="#contact" data-occasion="Célébration">Organiser ma réception <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="occasion-promise reveal">
+          <div class="promise-icon" aria-hidden="true">✓</div>
+          <div>
+            <h3>Une demande, trois étapes simples</h3>
+            <p>Vous nous racontez votre événement, nous vous proposons une création, puis nous validons ensemble les détails avant fabrication.</p>
+          </div>
+          <a class="text-link" href="#contact">Commencer <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section craft" id="savoir-faire">
+      <div class="container craft-grid">
+        <div class="craft-media reveal">
+          <img src="images/j8.jpg" alt="Boulanger préparant une recette artisanale" loading="lazy">
+          <div class="craft-stamp">
+            <span>Depuis<br><strong>le premier matin</strong></span>
+          </div>
+        </div>
+        <div class="craft-copy reveal">
+          <p class="eyebrow"><span></span> Notre savoir-faire</p>
+          <h2>Le temps est notre premier ingrédient.</h2>
+          <p class="lead">Nous défendons une pâtisserie expressive mais équilibrée, où chaque étape a son utilité et chaque détail se remarque.</p>
+
+          <div class="process-list">
+            <article>
+              <span>01</span>
+              <div><h3>On écoute</h3><p>Votre histoire, vos goûts, vos contraintes et le rythme de votre journée.</p></div>
+            </article>
+            <article>
+              <span>02</span>
+              <div><h3>On imagine</h3><p>Une proposition visuelle et gustative claire, sans compromis sur la dégustation.</p></div>
+            </article>
+            <article>
+              <span>03</span>
+              <div><h3>On sublime</h3><p>La fabrication, les finitions et la remise sont pensées pour un jour sans stress.</p></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery" id="galerie">
+      <div class="container">
+        <div class="gallery-heading reveal">
+          <div>
+            <p class="eyebrow eyebrow-light"><span></span> En images</p>
+            <h2>La délicatesse en détail</h2>
+          </div>
+          <a href="#contact">Demander nos réalisations récentes <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-item gallery-item-one reveal"><img src="images/j2.jpg" alt="Pains de tradition" loading="lazy"></figure>
+          <figure class="gallery-item gallery-item-two reveal"><img src="images/j5.jpg" alt="Entremets au chocolat" loading="lazy"></figure>
+          <figure class="gallery-item gallery-item-three reveal"><img src="images/j15.jpg" alt="Douceurs pour célébration" loading="lazy"></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial">
+      <div class="container testimonial-inner reveal">
+        <span class="quote-mark" aria-hidden="true">"</span>
+        <blockquote>Excellente boulangerie ! Les harchas aux graines valent le détour. Service au top, toujours accueillants et souriants. Les pains bio et les pâtisseries marocaines sont délicieux.</blockquote>
+        <div class="testimonial-author">
+          <span class="author-avatar" aria-hidden="true">C</span>
+          <div><strong>C.M.</strong><span>Google — ★★★★★</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow"><span></span> Avis Google</p>
+            <h2>Ce que nos clients disent</h2>
+          </div>
+          <div class="google-rating-badge">
+            <strong>4,6</strong>
+            <span>/5 — 160+ avis</span>
+          </div>
+        </div>
+        <div class="reviews-grid">
+          <article class="review-card reveal">
+            <div class="review-stars" aria-label="5 étoiles">★★★★★</div>
+            <blockquote>La meilleure boulangerie de Forest ! Toujours accueillants, très abordables et la qualité est constante. Un vrai bijout de quartier.</blockquote>
+            <div class="review-author"><strong>V.T.</strong><span>Google</span></div>
+          </article>
+          <article class="review-card reveal">
+            <div class="review-stars" aria-label="5 étoiles">★★★★★</div>
+            <blockquote>Excellente boulangerie, top qualité ! Toute la famille en profite. Espace chaleureux et accueillant. J'y achète mon gâteau d'anniversaire chaque année, c'est toujours parfait.</blockquote>
+            <div class="review-author"><strong>T.B.</strong><span>Google</span></div>
+          </article>
+          <article class="review-card reveal">
+            <div class="review-stars" aria-label="5 étoiles">★★★★★</div>
+            <blockquote>Très bonnes baguettes et prix très raisonnables. Le personnel est toujours adorable avec le sourire. Je recommande les yeux fermés !</blockquote>
+            <div class="review-author"><strong>L.V.</strong><span>Google</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <p class="eyebrow eyebrow-light"><span></span> Parlons de votre moment</p>
+          <h2>Votre événement mérite une création qui vous ressemble.</h2>
+          <p>Racontez-nous votre projet. Nous revenons vers vous sous 48 heures ouvrées avec nos premières recommandations.</p>
+
+          <div class="contact-details">
+            <a href="tel:+32477235396">
+              <span class="contact-icon" aria-hidden="true">⌕</span>
+              <div><small>Téléphone</small><strong>0477 23 53 96</strong></div>
+            </a>
+            <a href="mailto:bonjour@jade-baker.fr">
+              <span class="contact-icon" aria-hidden="true">@</span>
+              <div><small>Email</small><strong>bonjour@jade-baker.fr</strong></div>
+            </a>
+            <div>
+              <span class="contact-icon" aria-hidden="true">⌖</span>
+              <div><small>À la boutique</small><strong>Chau. d'Alsemberg 274, 1190 Forest</strong></div>
+            </div>
+          </div>
+
+          <div class="hours-card">
+            <div class="hours-card-title"><span></span> Horaires de la boutique</div>
+            <dl>
+              <div><dt>Lundi – dimanche</dt><dd>6h00 – 20h00</dd></div>
+              <div><dt>Mercredi</dt><dd>Fermé</dd></div>
+            </dl>
+          </div>
+        </div>
+
+        <form class="quote-form reveal" id="quoteForm">
+          <div class="form-heading">
+            <span>Demande personnalisée</span>
+            <h3>Qu’aimeriez-vous célébrer ?</h3>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="firstName">Prénom</label>
+              <input id="firstName" name="firstName" type="text" autocomplete="given-name" placeholder="Votre prénom" required>
+            </div>
+            <div class="field">
+              <label for="lastName">Nom</label>
+              <input id="lastName" name="lastName" type="text" autocomplete="family-name" placeholder="Votre nom" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="vous@exemple.fr" required>
+            </div>
+            <div class="field">
+              <label for="phone">Téléphone</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="06 00 00 00 00">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="occasion">Occasion</label>
+              <select id="occasion" name="occasion" required>
+                <option value="">Choisir une occasion</option>
+                <option value="Mariage">Mariage</option>
+                <option value="Anniversaire">Anniversaire</option>
+                <option value="Célébration">Célébration</option>
+                <option value="Autre">Autre demande</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="eventDate">Date de l’événement</label>
+              <input id="eventDate" name="eventDate" type="date" required>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="guests">Nombre d’invités</label>
+            <select id="guests" name="guests" required>
+              <option value="">Sélectionner</option>
+              <option value="2-10">2 à 10 invités</option>
+              <option value="11-30">11 à 30 invités</option>
+              <option value="31-60">31 à 60 invités</option>
+              <option value="61-100">61 à 100 invités</option>
+              <option value="100+">Plus de 100 invités</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="message">Votre idée</label>
+            <textarea id="message" name="message" rows="4" placeholder="Parlez-nous de vos envies, couleurs, parfums, contraintes ou inspirations…" required></textarea>
+          </div>
+
+          <label class="consent">
+            <input type="checkbox" required>
+            <span>J’accepte d’être contacté(e) au sujet de ma demande.</span>
+          </label>
+
+          <button class="button button-gold form-submit" type="submit">Envoyer ma commande sur WhatsApp</button>
+          <p class="form-note">Une question ? <a href="https://wa.me/32477235396" target="_blank" rel="noopener">Écrivez-nous sur WhatsApp</a></p>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div class="photo-banner" aria-hidden="true">
+    <img src="images/j12.jpg" alt="" loading="lazy">
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand brand-footer" href="#accueil">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64">
+              <defs>
+                <linearGradient id="goldGradFooter" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#e1c793"/>
+                  <stop offset="50%" style="stop-color:#c49a5a"/>
+                  <stop offset="100%" style="stop-color:#b48847"/>
+                </linearGradient>
+              </defs>
+              <path d="M40 6C22 6 8 20 8 38s14 20 32 20c10 0 18-4 22-10-8 4-16 6-24 6C18 54 4 40 4 22S18 6 36 6c4 0 7 1 10 3-2-1-4-3-6-3z" fill="url(#goldGradFooter)"/>
+            </svg>
+          </span>
+          <span>Jad'<span>OR</span></span>
+        </a>
+        <p>Une boulangerie sensible, des créations généreuses et des moments qui restent.</p>
+      </div>
+
+      <div class="footer-links">
+        <h3>Explorer</h3>
+        <a href="#signatures">Nos créations</a>
+        <a href="#evenements">Événements</a>
+        <a href="#savoir-faire">Savoir-faire</a>
+        <a href="#galerie">Galerie</a>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Nous trouver</h3>
+        <p>Chau. d'Alsemberg 274<br>1190 Forest</p>
+        <a href="tel:+32477235396">0477 23 53 96</a>
+        <a href="mailto:contact@jadord.fr">contact@jadord.fr</a>
+      </div>
+
+      <div class="footer-signature">
+        <span>Fait avec soin</span>
+        <strong>À très vite<br>à la boutique.</strong>
+        <a class="button button-footer" href="#contact">Demander un devis <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 Jad'OR. Tous droits réservés.</p>
+      <div><a href="#">Mentions légales</a><a href="#">Confidentialité</a></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

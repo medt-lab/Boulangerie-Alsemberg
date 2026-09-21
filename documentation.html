@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentation — Site Jad'OR</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #18231f;
+      --cream: #f8f4ec;
+      --gold: #c49a5a;
+      --muted: #66706a;
+      --paper: #fffdf9;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: "DM Sans", sans-serif; background: var(--cream); color: var(--forest); line-height: 1.7; }
+    .container { max-width: 900px; margin: 0 auto; padding: 40px 24px; }
+    header { background: var(--forest); color: #fff; padding: 60px 0; text-align: center; }
+    header h1 { font-family: "Playfair Display", serif; font-size: 2.5rem; margin-bottom: 10px; }
+    header h1 em { color: var(--gold); }
+    header p { color: rgba(255,255,255,0.7); }
+    h2 { font-family: "Playfair Display", serif; font-size: 1.8rem; margin: 40px 0 20px; color: var(--forest); border-bottom: 2px solid var(--gold); padding-bottom: 10px; }
+    h3 { font-size: 1.1rem; margin: 20px 0 10px; color: var(--forest); }
+    p, li { font-size: 0.95rem; color: #333; }
+    ul { margin-left: 20px; margin-bottom: 16px; }
+    li { margin-bottom: 6px; }
+    table { width: 100%; border-collapse: collapse; margin: 16px 0 24px; font-size: 0.9rem; }
+    th, td { padding: 10px 14px; border: 1px solid #ddd; text-align: left; }
+    th { background: var(--forest); color: #fff; font-weight: 600; }
+    tr:nth-child(even) { background: var(--paper); }
+    code { background: #eee; padding: 2px 6px; border-radius: 4px; font-size: 0.85rem; }
+    pre { background: var(--forest); color: #fff; padding: 20px; border-radius: 8px; overflow-x: auto; margin: 16px 0; font-size: 0.85rem; }
+    .badge { display: inline-block; background: var(--gold); color: #fff; padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; margin-right: 6px; }
+    .section-card { background: var(--paper); border: 1px solid #ddd; border-radius: 12px; padding: 24px; margin-bottom: 20px; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    footer { background: var(--forest); color: rgba(255,255,255,0.5); text-align: center; padding: 30px 0; font-size: 0.8rem; margin-top: 60px; }
+    @media (max-width: 600px) { .grid-2 { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Documentation <em>Jad'OR</em></h1>
+      <p>Site vitrine — Boulangerie artisanale & pâtisserie d'événements</p>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <h2>1. Présentation</h2>
+    <div class="section-card">
+      <p>Site vitrine professionnel et responsive pour la boulangerie Jad'OR située à Forest (Bruxelles). Le site met en avant les créations artisanales, les offres événementielles (mariage, anniversaire, célébration) et la spécialité marocaine.</p>
+      <ul>
+        <li><strong>Adresse</strong> : Chaussée d'Alsemberg 274, 1190 Forest</li>
+        <li><strong>Téléphone</strong> : 0477 23 53 96</li>
+        <li><strong>Email</strong> : bonjour@jade-baker.fr</li>
+        <li><strong>Note Google</strong> : 4,6/5 (160+ avis)</li>
+      </ul>
+    </div>
+
+    <h2>2. Structure du projet</h2>
+    <table>
+      <thead><tr><th>Fichier</th><th>Description</th></tr></thead>
+      <tbody>
+        <tr><td><code>index.html</code></td><td>Structure principale de la page</td></tr>
+        <tr><td><code>style.css</code></td><td>Design responsive, animations et variables CSS</td></tr>
+        <tr><td><code>script.js</code></td><td>Navigation, défilement, formulaire WhatsApp</td></tr>
+        <tr><td><code>favicon.svg</code></td><td>Identité visuelle (croissant lunaire doré)</td></tr>
+        <tr><td><code>documentation.html</code></td><td>Cette documentation</td></tr>
+        <tr><td><code>images/</code></td><td>Dossier des photos du site</td></tr>
+      </tbody>
+    </table>
+
+    <h2>3. Sections du site</h2>
+
+    <h3>Hero (Accueil)</h3>
+    <div class="section-card">
+      <p>Bannière principale avec photo de fond, titre accrocheur, carte "Ouvert aujourd'hui" et note Google. Un logo croissant lunaire doré est affiché dans la navigation.</p>
+    </div>
+
+    <h3>Signatures Jad'OR</h3>
+    <div class="section-card">
+      <p>6 produits phares avec images et prix :</p>
+      <table>
+        <thead><tr><th>Produit</th><th>Prix</th></tr></thead>
+        <tbody>
+          <tr><td>Baguette Tradition</td><td>1,20 €</td></tr>
+          <tr><td>Croissant à l'amande</td><td>2,80 €</td></tr>
+          <tr><td>Pain Campagnard</td><td>3,90 €</td></tr>
+          <tr><td>Tarte Tatin</td><td>6,50 €</td></tr>
+          <tr><td>Pain aux céréales</td><td>4,20 €</td></tr>
+          <tr><td>Croissant au beurre</td><td>2,80 €</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Sandwicherie & frais</h3>
+    <div class="section-card">
+      <p>Sandwichs à emporter, viennoiseries, sélection fraîche et boissons. Sandwichs disponibles : poulet, andalouse, thon nature, thon piquant, crudités.</p>
+    </div>
+
+    <h3>Spécialité marocaine</h3>
+    <div class="section-card">
+      <p>Pâtisseries traditionnelles marocaines : macarons, cornes de gazelle, briouats, makrouds, créations sur mesure.</p>
+    </div>
+
+    <h3>Événements</h3>
+    <div class="section-card">
+      <p>3 offres événementielles :</p>
+      <ul>
+        <li><strong>Mariage</strong> — À partir de 9,50 €/part</li>
+        <li><strong>Anniversaire</strong> — À partir de 65 €</li>
+        <li><strong>Célébration</strong> — 12 €/pers.</li>
+      </ul>
+    </div>
+
+    <h3>Savoir-faire</h3>
+    <div class="section-card">
+      <p>Processus en 3 étapes : On écoute → On imagine → On sublime. Mise en avant de l'artisanat et du temps comme ingrédient principal.</p>
+    </div>
+
+    <h3>Galerie</h3>
+    <div class="section-card">
+      <p>3 photos de réalisations : pains de tradition, entremets au chocolat, douceurs pour célébration.</p>
+    </div>
+
+    <h3>Avis Google</h3>
+    <div class="section-card">
+      <p>Badge 4,6/5 avec 160+ avis et 3 témoignages clients intégrés.</p>
+    </div>
+
+    <h3>Contact & Formulaire</h3>
+    <div class="section-card">
+      <p>Formulaire complet avec envoi WhatsApp. Champs : prénom, nom, email, téléphone, occasion, date, nombre d'invités, message.</p>
+    </div>
+
+    <h2>4. Technologies</h2>
+    <div class="grid-2">
+      <div class="section-card">
+        <h3>Front-end</h3>
+        <ul>
+          <li>HTML5 sémantique</li>
+          <li>CSS3 (variables, grid, animations)</li>
+          <li>JavaScript vanilla (ES6+)</li>
+        </ul>
+      </div>
+      <div class="section-card">
+        <h3>Services</h3>
+        <ul>
+          <li>Google Fonts (DM Sans, Playfair Display)</li>
+          <li>WhatsApp API (envoi de devis)</li>
+          <li>Unsplash (images externes)</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>5. Fonctionnalités JavaScript</h2>
+    <ul>
+      <li><strong>Menu mobile</strong> : Toggle responsive avec animation</li>
+      <li><strong>Header sticky</strong> : Ombre au défilement</li>
+      <li><strong>Reveal on scroll</strong> : Apparition progressive des éléments (IntersectionObserver)</li>
+      <li><strong>Navigation active</strong> : Section visible surlignée</li>
+      <li><strong>Préselection occasion</strong> : Clic sur les cartes événementielles</li>
+      <li><strong>Formulaire WhatsApp</strong> : Construction du message et ouverture de WhatsApp</li>
+      <li><strong>Date minimum</strong> : Date d'événement = aujourd'hui minimum</li>
+    </ul>
+
+    <h2>6. Responsive</h2>
+    <table>
+      <thead><tr><th>Breakpoint</th><th>Adaptations</th></tr></thead>
+      <tbody>
+        <tr><td>&gt; 1100px</td><td>Layout complet, 4 colonnes produits</td></tr>
+        <tr><td>900px – 1100px</td><td>Menu hamburger, 2 colonnes</td></tr>
+        <tr><td>640px – 900px</td><td>Grille simplifiée, sections empilées</td></tr>
+        <tr><td>&lt; 640px</td><td>Mobile first, tout en colonne unique</td></tr>
+      </tbody>
+    </table>
+
+    <h2>7. Images</h2>
+    <p>Le dossier <code>images/</code> contient 19 fichiers JPEG (j1.jpg à j18.jpg + THON-CRUDITES-1.jpg). Voir le README.md pour la correspondance complète image/section.</p>
+
+    <h2>8. Lancement</h2>
+    <pre>cd /Users/imac/Documents/IA/Omniroute/scripts/Jade-Baker
+python3 -m http.server 8000
+# Ouvrir http://localhost:8000</pre>
+
+    <h2>9. Déploiement Git</h2>
+    <pre>git init
+git add .
+git commit -m "Version initiale du site Jad'OR"
+gh repo create jade-baker --public --source=. --remote=origin --push</pre>
+
+    <h2>10. Sauvegardes</h2>
+    <p>Les archives <code>.tar.gz</code> sont stockées dans le dossier parent :</p>
+    <pre>/Users/imac/Documents/IA/Omniroute/scripts/Jade-Baker-backup-*.tar.gz</pre>
+
+  </div>
+
+  <footer>
+    <p>Documentation du site Jad'OR — Boulangerie artisanale & pâtisserie d'événements</p>
+  </footer>
+</body>
+</html>
