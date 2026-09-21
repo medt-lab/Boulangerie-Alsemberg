@@ -34,6 +34,7 @@
     .badge { display: inline-block; background: var(--gold); color: #fff; padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; margin-right: 6px; }
     .section-card { background: var(--paper); border: 1px solid #ddd; border-radius: 12px; padding: 24px; margin-bottom: 20px; }
     .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .highlight { background: var(--gold); color: #fff; padding: 3px 10px; border-radius: 6px; font-size: 0.8rem; font-weight: 700; }
     footer { background: var(--forest); color: rgba(255,255,255,0.5); text-align: center; padding: 30px 0; font-size: 0.8rem; margin-top: 60px; }
     @media (max-width: 600px) { .grid-2 { grid-template-columns: 1fr; } }
   </style>
@@ -43,6 +44,7 @@
     <div class="container">
       <h1>Documentation <em>Jad'OR</em></h1>
       <p>Site vitrine — Boulangerie artisanale & pâtisserie d'événements</p>
+      <p style="margin-top:12px"><span class="highlight">En ligne</span> <a href="https://medt-lab.github.io/jad-boulangerie/" style="color:#e1c793">https://medt-lab.github.io/jad-boulangerie/</a></p>
     </div>
   </header>
 
@@ -56,19 +58,21 @@
         <li><strong>Téléphone</strong> : 0477 23 53 96</li>
         <li><strong>Email</strong> : bonjour@jade-baker.fr</li>
         <li><strong>Note Google</strong> : 4,6/5 (160+ avis)</li>
+        <li><strong>Site en ligne</strong> : https://medt-lab.github.io/jad-boulangerie/</li>
+        <li><strong>Dépôt GitHub</strong> : https://github.com/medt-lab/jad-boulangerie</li>
       </ul>
     </div>
 
     <h2>2. Structure du projet</h2>
     <table>
-      <thead><tr><th>Fichier</th><th>Description</th></tr></thead>
+      <thead><tr><th>Fichier</th><th>Description</th><th>Taille</th></tr></thead>
       <tbody>
-        <tr><td><code>index.html</code></td><td>Structure principale de la page</td></tr>
-        <tr><td><code>style.css</code></td><td>Design responsive, animations et variables CSS</td></tr>
-        <tr><td><code>script.js</code></td><td>Navigation, défilement, formulaire WhatsApp</td></tr>
-        <tr><td><code>favicon.svg</code></td><td>Identité visuelle (croissant lunaire doré)</td></tr>
-        <tr><td><code>documentation.html</code></td><td>Cette documentation</td></tr>
-        <tr><td><code>images/</code></td><td>Dossier des photos du site</td></tr>
+        <tr><td><code>index.html</code></td><td>Structure principale de la page</td><td>~28 Ko</td></tr>
+        <tr><td><code>style.css</code></td><td>Design responsive, animations et variables CSS</td><td>~36 Ko</td></tr>
+        <tr><td><code>script.js</code></td><td>Navigation, défilement, formulaire WhatsApp</td><td>~3.6 Ko</td></tr>
+        <tr><td><code>favicon.svg</code></td><td>Identité visuelle (croissant lunaire doré)</td><td>~480 o</td></tr>
+        <tr><td><code>documentation.html</code></td><td>Cette documentation</td><td>~10 Ko</td></tr>
+        <tr><td><code>images/</code></td><td>Dossier des photos du site (19 fichiers)</td><td>~3.4 Mo</td></tr>
       </tbody>
     </table>
 
@@ -76,28 +80,34 @@
 
     <h3>Hero (Accueil)</h3>
     <div class="section-card">
-      <p>Bannière principale avec photo de fond, titre accrocheur, carte "Ouvert aujourd'hui" et note Google. Un logo croissant lunaire doré est affiché dans la navigation.</p>
+      <p>Bannière principale avec photo de fond, titre accrocheur, carte "Ouvert aujourd'hui" et note Google. Un logo croissant lunaire doré avec dégradé est affiché dans la navigation.</p>
+      <ul>
+        <li>Image de célébration superposée en haut à droite</li>
+        <li>Effet de zoom au chargement</li>
+        <li>Boutons : "Imaginer mon événement" / "Découvrir la carte"</li>
+      </ul>
     </div>
 
     <h3>Signatures Jad'OR</h3>
     <div class="section-card">
       <p>6 produits phares avec images et prix :</p>
       <table>
-        <thead><tr><th>Produit</th><th>Prix</th></tr></thead>
+        <thead><tr><th>Produit</th><th>Image</th><th>Prix</th></tr></thead>
         <tbody>
-          <tr><td>Baguette Tradition</td><td>1,20 €</td></tr>
-          <tr><td>Croissant à l'amande</td><td>2,80 €</td></tr>
-          <tr><td>Pain Campagnard</td><td>3,90 €</td></tr>
-          <tr><td>Tarte Tatin</td><td>6,50 €</td></tr>
-          <tr><td>Pain aux céréales</td><td>4,20 €</td></tr>
-          <tr><td>Croissant au beurre</td><td>2,80 €</td></tr>
+          <tr><td>Baguette Tradition</td><td>j8.jpg</td><td>1,20 €</td></tr>
+          <tr><td>Croissant à l'amande</td><td>j6.jpg</td><td>2,80 €</td></tr>
+          <tr><td>Pain Campagnard</td><td>j1.jpg</td><td>3,90 €</td></tr>
+          <tr><td>Tarte Tatin</td><td>j4.jpg</td><td>6,50 €</td></tr>
+          <tr><td>Pain aux céréales</td><td>Unsplash</td><td>4,20 €</td></tr>
+          <tr><td>Croissant au beurre</td><td>Unsplash</td><td>2,80 €</td></tr>
         </tbody>
       </table>
     </div>
 
     <h3>Sandwicherie & frais</h3>
     <div class="section-card">
-      <p>Sandwichs à emporter, viennoiseries, sélection fraîche et boissons. Sandwichs disponibles : poulet, andalouse, thon nature, thon piquant, crudités.</p>
+      <p>Sandwichs à emporter, viennoiseries, sélection fraîche et boissons.</p>
+      <p><strong>Sandwichs disponibles</strong> : poulet, andalouse, thon nature, thon piquant, crudités</p>
     </div>
 
     <h3>Spécialité marocaine</h3>
@@ -122,7 +132,7 @@
 
     <h3>Galerie</h3>
     <div class="section-card">
-      <p>3 photos de réalisations : pains de tradition, entremets au chocolat, douceurs pour célébration.</p>
+      <p>3 photos de réalisations : pains de tradition, entremets au chocolat, douceurs pour célébration. Grille responsive avec effet de zoom au survol.</p>
     </div>
 
     <h3>Avis Google</h3>
@@ -133,6 +143,7 @@
     <h3>Contact & Formulaire</h3>
     <div class="section-card">
       <p>Formulaire complet avec envoi WhatsApp. Champs : prénom, nom, email, téléphone, occasion, date, nombre d'invités, message.</p>
+      <p>Lien "Écrivez-nous sur WhatsApp" sous le formulaire.</p>
     </div>
 
     <h2>4. Technologies</h2>
@@ -151,6 +162,7 @@
           <li>Google Fonts (DM Sans, Playfair Display)</li>
           <li>WhatsApp API (envoi de devis)</li>
           <li>Unsplash (images externes)</li>
+          <li>GitHub Pages (hébergement)</li>
         </ul>
       </div>
     </div>
@@ -178,27 +190,78 @@
     </table>
 
     <h2>7. Images</h2>
-    <p>Le dossier <code>images/</code> contient 19 fichiers JPEG (j1.jpg à j18.jpg + THON-CRUDITES-1.jpg). Voir le README.md pour la correspondance complète image/section.</p>
+    <p>Le dossier <code>images/</code> contient 19 fichiers JPEG (j1.jpg à j18.jpg + THON-CRUDITES-1.jpg).</p>
+    <table>
+      <thead><tr><th>Image</th><th>Contenu</th><th>Utilisation</th></tr></thead>
+      <tbody>
+        <tr><td>j1.jpg</td><td>Vitrine pains</td><td>Hero + Pain Campagnard</td></tr>
+        <tr><td>j2.jpg</td><td>Vitrine gâteaux</td><td>Galerie</td></tr>
+        <tr><td>j3.jpg</td><td>Vitrine pâtisseries</td><td>—</td></tr>
+        <tr><td>j4.jpg</td><td>Tartes fraîches</td><td>Tarte Tatin</td></tr>
+        <tr><td>j5.jpg</td><td>Gâteau Noël</td><td>Galerie</td></tr>
+        <tr><td>j6.jpg</td><td>Tartes chocolat/framboise</td><td>Croissant à l'amande</td></tr>
+        <tr><td>j7.jpg</td><td>Pâtisseries marocaines</td><td>Spécialité marocaine</td></tr>
+        <tr><td>j8.jpg</td><td>Assortiment pains</td><td>Baguette + Savoir-faire</td></tr>
+        <tr><td>j9.jpg</td><td>Red velvet / desserts</td><td>Sélection fraîche</td></tr>
+        <tr><td>j10.jpg</td><td>Barres chocolat/pistache</td><td>—</td></tr>
+        <tr><td>j11.jpg</td><td>Makrouds/briouats</td><td>Spécialité marocaine</td></tr>
+        <tr><td>j12.jpg</td><td>Entremets chocolat</td><td>Photo banner footer</td></tr>
+        <tr><td>j13.jpg</td><td>Façade boutique</td><td>Événements Mariage</td></tr>
+        <tr><td>j14.jpg</td><td>Gâteau mariage</td><td>—</td></tr>
+        <tr><td>j15.jpg</td><td>Verres dessert</td><td>Galerie</td></tr>
+        <tr><td>j16.jpg</td><td>Gâteau anniversaire</td><td>Événements Anniversaire</td></tr>
+        <tr><td>j17.jpg</td><td>Gâteau 50 ans</td><td>Événements Célébration</td></tr>
+        <tr><td>j18.jpg</td><td>Viennoiseries</td><td>Sandwicherie</td></tr>
+        <tr><td>THON-CRUDITES-1.jpg</td><td>Sandwich thon</td><td>Sandwich frais</td></tr>
+      </tbody>
+    </table>
 
-    <h2>8. Lancement</h2>
-    <pre>cd /Users/imac/Documents/IA/Omniroute/scripts/Jade-Baker
-python3 -m http.server 8000
-# Ouvrir http://localhost:8000</pre>
+    <h2>8. Déploiement</h2>
 
-    <h2>9. Déploiement Git</h2>
+    <h3>Git</h3>
     <pre>git init
 git add .
 git commit -m "Version initiale du site Jad'OR"
-gh repo create jade-baker --public --source=. --remote=origin --push</pre>
+git remote add origin https://github.com/medt-lab/jad-boulangerie.git
+git branch -M main
+git push -u origin main</pre>
+
+    <h3>GitHub Pages</h3>
+    <pre># Via API
+curl -L -X POST https://api.github.com/repos/medt-lab/jad-boulangerie/pages \
+  -H "Authorization: token TOKEN" \
+  -H "Accept: application/vnd.github+json" \
+  -d '{"source":{"branch":"main","path":"/"}}'</pre>
+    <p>Le site est accessible à l'adresse : <code>https://medt-lab.github.io/jad-boulangerie/</code></p>
+
+    <h2>9. Lancement local</h2>
+    <pre>cd /Users/imac/Documents/IA/Omniroute/scripts/Jade-Baker
+python3 -m http.server 8000
+# Ouvrir http://localhost:8000</pre>
 
     <h2>10. Sauvegardes</h2>
     <p>Les archives <code>.tar.gz</code> sont stockées dans le dossier parent :</p>
     <pre>/Users/imac/Documents/IA/Omniroute/scripts/Jade-Baker-backup-*.tar.gz</pre>
 
+    <h2>11. Historique des modifications</h2>
+    <table>
+      <thead><tr><th>Date</th><th>Modification</th></tr></thead>
+      <tbody>
+        <tr><td>21/09/2026</td><td>Création du site, renommage pictures → images</td></tr>
+        <tr><td>21/09/2026</td><td>Ajout envoi formulaire via WhatsApp</td></tr>
+        <tr><td>21/09/2026</td><td>Logo croissant lunaire doré avec dégradé</td></tr>
+        <tr><td>21/09/2026</td><td>Ajustement position image hero</td></tr>
+        <tr><td>21/09/2026</td><td>Badge "À composer" → "À emporter" pour sandwich</td></tr>
+        <tr><td>21/09/2026</td><td>Documentation HTML et MD</td></tr>
+        <tr><td>21/09/2026</td><td>Déploiement GitHub + GitHub Pages</td></tr>
+      </tbody>
+    </table>
+
   </div>
 
   <footer>
     <p>Documentation du site Jad'OR — Boulangerie artisanale & pâtisserie d'événements</p>
+    <p style="margin-top:8px">Dernière mise à jour : 21 septembre 2026</p>
   </footer>
 </body>
 </html>

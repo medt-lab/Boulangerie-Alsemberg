@@ -2,6 +2,11 @@
 
 Site vitrine professionnel et responsive pour la Boulangerie Jad'OR (Forest), avec des offres dédiées aux mariages, anniversaires et célébrations.
 
+## En ligne
+
+- **Site** : https://medt-lab.github.io/jad-boulangerie/
+- **Dépôt GitHub** : https://github.com/medt-lab/jad-boulangerie
+
 ## Coordonnées
 
 - **Adresse** : Chaussée d'Alsemberg 274, 1190 Forest
@@ -23,9 +28,9 @@ Site vitrine professionnel et responsive pour la Boulangerie Jad'OR (Forest), av
 
 ## Sections du site
 
-### Hero
+### Hero (Accueil)
 - Photo d'accueil (vitrine pains)
-- Petite photo de célébration superposée
+- Petite photo de célébration superposée (en haut à droite)
 - Note Google 4,6/5
 - Carte "Ouvert aujourd'hui"
 
@@ -77,10 +82,10 @@ Site vitrine professionnel et responsive pour la Boulangerie Jad'OR (Forest), av
 - Badge 4,6/5 avec 160+ avis
 - 3 avis clients intégrés (C.M., V.T., L.V.)
 
-### Contact
-- Formulaire de demande de devis
-- Envoi via WhatsApp
+### Contact & Formulaire
+- Formulaire complet avec envoi WhatsApp
 - Coordonnées complètes
+- Horaires de la boutique
 
 ## Fonctionnalités
 
@@ -92,7 +97,7 @@ Site vitrine professionnel et responsive pour la Boulangerie Jad'OR (Forest), av
 - Formulaire de demande de devis avec envoi WhatsApp
 - Accessibilité : navigation au clavier, libellés, contraste et réduction des animations
 - Animations au défilement (reveal)
-- Logo croissant lunaire doré
+- Logo croissant lunaire doré avec dégradé
 
 ## Structure des fichiers
 
@@ -100,10 +105,10 @@ Site vitrine professionnel et responsive pour la Boulangerie Jad'OR (Forest), av
 |---------|-------------|
 | `index.html` | Structure de la page |
 | `style.css` | Design responsive et animations |
-| `script.js` | Navigation, défilement et formulaire |
-| `favicon.svg` | Identité visuelle (croissant lunaire) |
-| `documentation.html` | Documentation technique du site |
-| `images/` | Photos du site (j1.jpg à j18.jpg + THON-CRUDITES-1.jpg) |
+| `script.js` | Navigation, défilement et formulaire WhatsApp |
+| `favicon.svg` | Identité visuelle (croissant lunaire doré) |
+| `documentation.html` | Documentation technique HTML |
+| `images/` | Photos du site (19 fichiers JPEG) |
 
 ## Images du dossier images/
 
@@ -132,29 +137,39 @@ Site vitrine professionnel et responsive pour la Boulangerie Jad'OR (Forest), av
 ## Technologies utilisées
 
 - **HTML5** : Structure sémantique
-- **CSS3** : Design responsive, animations, variables custom
-- **JavaScript vanilla** : Navigation, formulaire, observateurs d'intersection
+- **CSS3** : Design responsive, animations, variables CSS custom
+- **JavaScript vanilla** : Navigation, formulaire, IntersectionObserver
 - **Google Fonts** : DM Sans, Playfair Display
 - **WhatsApp API** : Envoi de devis
-
-## Lancement du site
-
-Ouvrir `index.html` directement dans un navigateur ou lancer un serveur local :
-
-```bash
-cd /Users/imac/Documents/IA/Omniroute/scripts/Jade-Baker
-python3 -m http.server 8000
-```
-
-Puis ouvrir [http://localhost:8000](http://localhost:8000).
+- **GitHub Pages** : Hébergement gratuit
 
 ## Déploiement Git
 
 ```bash
+# Initialiser
 git init
 git add .
 git commit -m "Version initiale du site Jad'OR"
-gh repo create jade-baker --public --source=. --remote=origin --push
+
+# Créer le dépôt sur GitHub puis :
+git remote add origin https://github.com/medt-lab/jad-boulangerie.git
+git branch -M main
+git push -u origin main
+```
+
+## GitHub Pages
+
+Le site est hébergé via GitHub Pages :
+- **URL** : https://medt-lab.github.io/jad-boulangerie/
+- **Source** : branche `main`, dossier racine
+- **Activation** : Settings → Pages → Source : main
+
+## Lancement local
+
+```bash
+cd /Users/imac/Documents/IA/Omniroute/scripts/Jade-Baker
+python3 -m http.server 8000
+# Ouvrir http://localhost:8000
 ```
 
 ## Sauvegardes
