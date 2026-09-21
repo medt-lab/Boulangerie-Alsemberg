@@ -18,13 +18,13 @@ Site vitrine professionnel et responsive pour la Boulangerie Jad'OR (Forest), av
 
 | Jour | Horaires |
 |------|----------|
-| Lundi | 6h00 – 20h00 |
-| Mardi | 6h00 – 20h00 |
+| Lundi | 6h30 – 20h00 |
+| Mardi | 6h30 – 20h00 |
 | Mercredi | **Fermé** |
-| Jeudi | 6h00 – 20h00 |
-| Vendredi | 6h00 – 20h00 |
-| Samedi | 6h00 – 20h00 |
-| Dimanche | 6h00 – 20h00 |
+| Jeudi | 6h30 – 20h00 |
+| Vendredi | 6h30 – 20h00 |
+| Samedi | 6h30 – 20h00 |
+| Dimanche | 6h30 – 20h00 |
 
 ## Sections du site
 
@@ -47,7 +47,7 @@ Site vitrine professionnel et responsive pour la Boulangerie Jad'OR (Forest), av
 ### Sandwicherie & frais (4 produits)
 | Produit | Image | Prix |
 |---------|-------|------|
-| Sandwich frais | THON-CRUDITES-1.jpg | 7,50 € |
+| Sandwich frais | THON-CRUDITES-1.jpg | 4,50 € |
 | Viennoiseries | j18.jpg | À partir de 1,80 € |
 | Sélection fraîche | j9.jpg | Sur sélection |
 | Boissons | Unsplash café | 3,50 € |
