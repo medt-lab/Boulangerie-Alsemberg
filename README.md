@@ -180,3 +180,25 @@ Les archives de sauvegarde sont situées dans :
 ## Auteur
 
 Site réalisé pour la Boulangerie Jad'OR — Forest, Belgique.
+
+## Historique des modifications
+
+| Date | Modification |
+|------|-------------|
+| 21/09/2026 | Création du site, renommage pictures → images |
+| 21/09/2026 | Ajout envoi formulaire via WhatsApp |
+| 21/09/2026 | Logo croissant lunaire doré avec dégradé |
+| 21/09/2026 | Ajustement position image hero |
+| 21/09/2026 | Badge "À composer" → "À emporter" pour sandwich |
+| 21/09/2026 | Documentation HTML et MD |
+| 21/09/2026 | Déploiement GitHub + GitHub Pages |
+| 21/09/2026 | Fix espacement labels contact (TÉLÉPHONE, EMAIL) |
+
+## Corrections techniques
+
+### Fix espacement labels contact
+- **Problème** : Les labels "TÉLÉPHONE" et "EMAIL" se chevauchaient avec les valeurs
+- **Cause** : Les éléments `small` et `strong` étaient tous les deux en ligne
+- **Solution** : Ajout de `display: block` et `margin-bottom: 4px` sur `.contact-details small`
+- **Fichier modifié** : `style.css`
+- **Ligne** : 1267-1271

@@ -254,8 +254,21 @@ python3 -m http.server 8000
         <tr><td>21/09/2026</td><td>Badge "À composer" → "À emporter" pour sandwich</td></tr>
         <tr><td>21/09/2026</td><td>Documentation HTML et MD</td></tr>
         <tr><td>21/09/2026</td><td>Déploiement GitHub + GitHub Pages</td></tr>
+        <tr><td>21/09/2026</td><td>Fix espacement labels contact (TÉLÉPHONE, EMAIL)</td></tr>
       </tbody>
     </table>
+
+    <h2>12. Corrections techniques</h2>
+
+    <h3>Fix espacement labels contact</h3>
+    <div class="section-card">
+      <ul>
+        <li><strong>Problème</strong> : Les labels "TÉLÉPHONE" et "EMAIL" se chevauchaient avec les valeurs</li>
+        <li><strong>Cause</strong> : Les éléments <code>small</code> et <code>strong</code> étaient tous les deux en ligne</li>
+        <li><strong>Solution</strong> : Ajout de <code>display: block</code> et <code>margin-bottom: 4px</code> sur <code>.contact-details small</code></li>
+        <li><strong>Fichier</strong> : <code>style.css</code> ligne 1267-1271</li>
+      </ul>
+    </div>
 
   </div>
 
