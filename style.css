@@ -1265,6 +1265,8 @@ h2 em,
 }
 
 .contact-details small {
+  display: block;
+  margin-bottom: 4px;
   color: rgba(255, 255, 255, 0.48);
   font-size: 0.68rem;
   text-transform: uppercase;
