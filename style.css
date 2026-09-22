@@ -306,14 +306,15 @@ h2 em,
 .nav-actions {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
   margin-left: auto;
+  flex-shrink: 0;
 }
 
 .nav-icon-btn {
   display: grid;
-  width: 38px;
-  height: 38px;
+  width: 36px;
+  height: 36px;
   place-items: center;
   padding: 0;
   border: 1px solid var(--line);
@@ -322,6 +323,7 @@ h2 em,
   color: var(--forest);
   cursor: pointer;
   transition: background var(--transition), border-color var(--transition);
+  flex-shrink: 0;
 }
 
 .nav-icon-btn:hover {
@@ -332,31 +334,36 @@ h2 em,
 .lang-switcher {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 2px;
+  padding: 3px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--paper);
+  flex-shrink: 0;
 }
 
 .lang-btn {
-  padding: 4px 8px;
+  display: flex;
+  width: 30px;
+  height: 28px;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
   border: none;
+  border-radius: 16px;
   background: transparent;
-  color: var(--muted);
-  font-size: 0.72rem;
-  font-weight: 700;
   cursor: pointer;
-  transition: color var(--transition);
+  transition: background var(--transition);
 }
 
 .lang-btn.active {
-  color: var(--forest);
+  background: var(--forest);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
 }
 
-.lang-btn:hover {
-  color: var(--gold);
-}
-
-.lang-sep {
-  color: var(--line);
-  font-size: 0.72rem;
+.lang-flag {
+  font-size: 1rem;
+  line-height: 1;
 }
 
 .nav-menu ul {
