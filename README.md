@@ -4,8 +4,8 @@ Site vitrine professionnel et responsive pour la Boulangerie Jad'OR (Forest), av
 
 ## En ligne
 
-- **Site** : https://medt-lab.github.io/jad-boulangerie/
-- **Dépôt GitHub** : https://github.com/medt-lab/jad-boulangerie
+- **Site** : https://medt-lab.github.io/Boulangerie-Alsemberg/
+- **Dépôt GitHub** : https://github.com/medt-lab/Boulangerie-Alsemberg
 
 ## Coordonnées
 
@@ -152,7 +152,7 @@ git add .
 git commit -m "Version initiale du site Jad'OR"
 
 # Créer le dépôt sur GitHub puis :
-git remote add origin https://github.com/medt-lab/jad-boulangerie.git
+git remote add origin https://github.com/medt-lab/Boulangerie-Alsemberg.git
 git branch -M main
 git push -u origin main
 ```
@@ -160,14 +160,14 @@ git push -u origin main
 ## GitHub Pages
 
 Le site est hébergé via GitHub Pages :
-- **URL** : https://medt-lab.github.io/jad-boulangerie/
+- **URL** : https://medt-lab.github.io/Boulangerie-Alsemberg/
 - **Source** : branche `main`, dossier racine
 - **Activation** : Settings → Pages → Source : main
 
 ## Lancement local
 
 ```bash
-cd /Users/imac/Documents/IA/Omniroute/scripts/Jade-Baker
+cd /Users/imac/Documents/IA/Omniroute/scripts/Boulangerie-Alsemberg
 python3 -m http.server 8000
 # Ouvrir http://localhost:8000
 ```
@@ -175,7 +175,7 @@ python3 -m http.server 8000
 ## Sauvegardes
 
 Les archives de sauvegarde sont situées dans :
-`/Users/imac/Documents/IA/Omniroute/scripts/Jade-Baker-backup-*.tar.gz`
+`/Users/imac/Documents/IA/Omniroute/scripts/Boulangerie-Alsemberg-backup-*.tar.gz`
 
 ## Auteur
 
