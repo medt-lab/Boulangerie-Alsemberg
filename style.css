@@ -302,6 +302,62 @@ h2 em,
   gap: 34px;
 }
 
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-left: auto;
+}
+
+.nav-icon-btn {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--forest);
+  cursor: pointer;
+  transition: background var(--transition), border-color var(--transition);
+}
+
+.nav-icon-btn:hover {
+  border-color: var(--gold);
+  background: rgba(196, 154, 90, 0.08);
+}
+
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.lang-btn {
+  padding: 4px 8px;
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: color var(--transition);
+}
+
+.lang-btn.active {
+  color: var(--forest);
+}
+
+.lang-btn:hover {
+  color: var(--gold);
+}
+
+.lang-sep {
+  color: var(--line);
+  font-size: 0.72rem;
+}
+
 .nav-menu ul {
   display: flex;
   margin: 0;
