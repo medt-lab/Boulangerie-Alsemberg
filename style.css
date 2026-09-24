@@ -439,16 +439,12 @@ h2 em,
 }
 
 .hero-floating-img {
-  position: absolute;
-  bottom: 15%;
-  right: 5%;
   width: 240px;
   height: 240px;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
   border: 3px solid rgba(255, 255, 255, 0.12);
-  z-index: 3;
 }
 
 .hero-floating-img img {
@@ -507,8 +503,10 @@ h2 em,
 }
 
 .opening-card {
-  justify-self: end;
-  align-self: end;
+  position: absolute;
+  top: 28px;
+  right: 0;
+  z-index: 4;
   width: min(100%, 320px);
   padding: 20px 24px;
   border-radius: var(--radius-lg);
@@ -546,10 +544,11 @@ h2 em,
 }
 
 .hero-bottom-right {
+  align-self: end;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 12px;
+  gap: 16px;
 }
 
 .scroll-cue {
@@ -1725,8 +1724,10 @@ h2 em,
   }
 
   .opening-card {
+    position: static;
     width: 100%;
     justify-self: stretch;
+    align-self: start;
   }
 
   .features-grid {
@@ -1820,8 +1821,6 @@ h2 em,
   .hero-floating-img {
     width: 140px;
     height: 140px;
-    bottom: 12%;
-    right: 3%;
     border-radius: 14px;
   }
 
@@ -1851,6 +1850,7 @@ h2 em,
   }
 
   .opening-card {
+    position: static;
     width: 100%;
     padding: 20px;
   }
@@ -2106,8 +2106,9 @@ h2 em,
   }
 
   .opening-card {
+    position: static;
     padding: 14px 16px;
-    width: min(100%, 260px);
+    width: 100%;
   }
 
   .opening-card strong {
